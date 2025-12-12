@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Data Science Projects</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Leo's DS Projects</h1>
+      <h1 class="gradient-text"><i class="fas fa-chart-line"></i> Leo's DS Projects</h1>
       <p class="subtitle">A collection of links to my personal projects and demos.</p>
     </div>
   </header>
@@ -27,7 +28,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>Made by Leo • <a href="https://github.com/leonardosor">GitHub</a></small>
+      <small>Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by Leo • <a href="https://github.com/leonardosor"><i class="fab fa-github"></i> GitHub</a></small>
     </div>
   </footer>
 
@@ -40,11 +41,12 @@
         const grid = document.getElementById('project-grid');
         grid.innerHTML = projects.map(p => `
           <article class="card">
+            <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
             <h3 class="card-title"><a href="${escapeHtml(p.url || p.repo || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(p.title)}</a></h3>
             <p class="card-desc">${escapeHtml(p.description || '')}</p>
             <p class="card-meta">
-              ${p.repo ? `<a href="${escapeHtml(p.repo)}" target="_blank" rel="noopener noreferrer">Repo</a>` : ''}
-              ${p.tags ? ' • ' + escapeHtml(p.tags.join(', ')) : ''}
+              ${p.repo ? `<a href="${escapeHtml(p.repo)}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repo</a>` : ''}
+              ${p.tags ? '<span class="tags">' + p.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('') + '</span>' : ''}
             </p>
           </article>
         `).join('');
