@@ -1,12 +1,12 @@
 [
   {
-    "title": "Demographics for high school standardized testing and SAT scores - Dimensional analysis",
+    "title": "Demographics and performance on standardized testing - Dimensional analysis ",
     "description": "Analysis and visualization of high school testing and SAT score demographics.",
     "repo": "https://github.com/leonardosor/milestone2",
     "tags": ["data-analysis", "visualization"]
   },
   {
-    "title": "YOLO on financial forms - Fine-tuning CNNs for financial form domain",
+    "title": "YOLO on financial forms - Fine-tuning CNNs for images in the financial domain",
     "description": "Fine-tuning object detection CNNs (YOLO) for extraction and processing of fields in financial forms.",
     "repo": "https://github.com/leonardosor/siads-699",
     "url": "https://siads-699-smvw275fogweysx8gj6dri.streamlit.app/",
