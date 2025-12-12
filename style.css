@@ -1,10 +1,10 @@
 :root{
   --bg:#0f1720;
   --card:#0b1220;
-  --muted:#94a3b8;
-  --accent:#38bdf8;
-  --accent-glow:#60a5fa;
-  --text:#e6eef8;
+  --muted:#b4c7e0;
+  --accent:#5ec8ff;
+  --accent-glow:#7dd3ff;
+  --text:#f5f9ff;
   --container:1100px;
   --radius:12px;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
@@ -16,6 +16,7 @@ html,body{height:100%}
 body{
   margin:0;
   font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 16px;
   background:#050a14;
   background-image: 
     radial-gradient(at 20% 30%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
@@ -46,12 +47,12 @@ body{
 }
 .site-header h1{
   margin:0;
-  font-size:2.5rem;
+  font-size:3rem;
   font-weight:700;
   animation: fadeInDown 0.8s ease;
 }
 .gradient-text{
-  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+  background: linear-gradient(135deg, #5ec8ff 0%, #9fa8ff 50%, #d8b4fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -59,7 +60,7 @@ body{
 .subtitle{
   color:var(--muted);
   margin:12px 0 0;
-  font-size:1.1rem;
+  font-size:1.25rem;
   animation: fadeIn 1s ease 0.3s both;
 }
 
@@ -131,15 +132,15 @@ body{
 }
 
 .card-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--accent);
   margin-bottom: 12px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .card-title{
   margin:0 0 12px;
-  font-size:1.2rem;
+  font-size:1.4rem;
   font-weight:600;
 }
 .card-title a{
@@ -153,11 +154,11 @@ body{
 .card-desc{
   margin:0 0 16px;
   color:var(--muted);
-  font-size:0.95rem;
-  line-height:1.6;
+  font-size:1.05rem;
+  line-height:1.7;
 }
 .card-meta{
-  font-size:0.85rem;
+  font-size:0.95rem;
   color:var(--muted);
   display: flex;
   align-items: center;
@@ -181,11 +182,11 @@ body{
 }
 
 .tag {
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  padding: 2px 8px;
+  background: rgba(94, 200, 255, 0.15);
+  border: 1px solid rgba(94, 200, 255, 0.3);
+  padding: 4px 10px;
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--accent);
 }
 
@@ -196,15 +197,16 @@ body{
   background:rgba(255,255,255,0.02);
   border-left:3px solid var(--accent);
   border-radius:var(--radius);
+  font-size:1.05rem;
 }
 .notes h2 {
   margin-top:0;
   color:var(--text);
-  font-size:1.2rem;
+  font-size:1.35rem;
 }
 .notes code {
-  background:rgba(56, 189, 248, 0.1);
-  padding:2px 6px;
+  background:rgba(94, 200, 255, 0.15);
+  padding:3px 8px;
   border-radius:4px;
   color:var(--accent);
 }
@@ -227,6 +229,7 @@ body{
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 0.95rem;
 }
 a{
   color:var(--accent);
