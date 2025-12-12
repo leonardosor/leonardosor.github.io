@@ -1,0 +1,60 @@
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#38bdf8;
+  --text:#e6eef8;
+  --container:1100px;
+  --radius:10px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,#071126 0%, #081025 60%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-bottom:48px;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:24px;
+}
+
+.site-header{
+  padding:28px 0 6px;
+  text-align:left;
+}
+.site-header h1{margin:0;font-size:1.6rem}
+.subtitle{color:var(--muted);margin:6px 0 0}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.04);
+  padding:16px;
+  border-radius:var(--radius);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{transform:translateY(-6px); box-shadow:0 8px 30px rgba(0,0,0,0.5);}
+.card-title{margin:0 0 8px; font-size:1.05rem}
+.card-title a{color:var(--accent); text-decoration:none}
+.card-desc{margin:0 0 10px; color:var(--muted); font-size:0.95rem}
+.card-meta{font-size:0.85rem; color:var(--muted)}
+
+.notes{margin-top:28px; color:var(--muted)}
+.site-footer{position:fixed; left:0; right:0; bottom:0; background:rgba(2,6,23,0.6); border-top:1px solid rgba(255,255,255,0.03); padding:8px 0}
+.site-footer .container{display:flex; justify-content:flex-start; align-items:center}
+a{color:var(--accent)}
+.error{color:#ffb4b4}
