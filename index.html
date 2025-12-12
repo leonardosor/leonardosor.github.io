@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leonardo Sor — Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Leonardo Sor — Projects</h1>
+      <p class="subtitle">A collection of links to my personal projects and demos.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="project-grid" class="grid">
+      <!-- Projects will be inserted here by script -->
+    </section>
+
+    <section class="notes">
+      <h2>Notes</h2>
+      <p>Edit <code>projects.json</code> to add or remove projects. Each project can include title, description, url, repo, and tags.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made by Leonardo • <a href="https://github.com/leonardosor">GitHub</a></small>
+    </div>
+  </footer>
+
+  <script>
+    async function loadProjects() {
+      try {
+        const res = await fetch('projects.json', {cache: "no-store"});
+        if (!res.ok) throw new Error('projects.json not found');
+        const projects = await res.json();
+        const grid = document.getElementById('project-grid');
+        grid.innerHTML = projects.map(p => `
+          <article class="card">
+            <h3 class="card-title"><a href="${escapeHtml(p.url || p.repo || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(p.title)}</a></h3>
+            <p class="card-desc">${escapeHtml(p.description || '')}</p>
+            <p class="card-meta">
+              ${p.repo ? `<a href="${escapeHtml(p.repo)}" target="_blank" rel="noopener noreferrer">Repo</a>` : ''}
+              ${p.tags ? ' • ' + escapeHtml(p.tags.join(', ')) : ''}
+            </p>
+          </article>
+        `).join('');
+      } catch (err) {
+        document.getElementById('project-grid').innerHTML = '<p class="error">Could not load projects.json — edit or upload the file.</p>';
+        console.error(err);
+      }
+    }
+
+    function escapeHtml(str='') {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    loadProjects();
+  </script>
+</body>
+</html>
