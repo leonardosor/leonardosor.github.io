@@ -9,6 +9,7 @@
     "title": "YOLO on financial forms - Fine-tuning CNNs for financial form domain",
     "description": "Fine-tuning object detection CNNs (YOLO) for extraction and processing of fields in financial forms.",
     "repo": "https://github.com/leonardosor/siads-699",
+    "url": "https://siads-699-smvw275fogweysx8gj6dri.streamlit.app/",
     "tags": ["machine-learning", "computer-vision"]
   }
 ]
