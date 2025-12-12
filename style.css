@@ -20,7 +20,7 @@ body{
   background-image: 
     radial-gradient(at 20% 30%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
     radial-gradient(at 80% 70%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
-    linear-gradient(180deg, #35569e 0%, #182c55 100%);
+    linear-gradient(180deg, #1c3f8a 0%, #182c55 100%);
   background-attachment: fixed;
   color:var(--text);
   -webkit-font-smoothing:antialiased;
