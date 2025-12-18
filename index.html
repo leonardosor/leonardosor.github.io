@@ -6,25 +6,48 @@
   <title>LC - Data Science Projects</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="animated-bg">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+  
   <header class="site-header">
     <div class="container">
-      <h1 class="gradient-text"><i class="fas fa-chart-line"></i> Leo's Data Science Projects</h1>
-      <p class="subtitle">A collection of links to my personal projects and demos.</p>
+      <div class="header-content">
+        <h1 class="gradient-text"><i class="fas fa-chart-line"></i> Leo's Data Science Projects</h1>
+        <p class="subtitle"><i class="fas fa-sparkles"></i> A collection of links to my personal projects and demos.</p>
+      </div>
     </div>
   </header>
 
   <main class="container">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-divider"></div>
+    </div>
     <section id="project-grid" class="grid">
       <!-- Projects will be inserted here by script -->
     </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>Made with <i class="fas fa-fire" style="color: #ff6b6b;"></i> by Leo • <a href="https://github.com/leonardosor"><i class="fab fa-github"></i> GitHub</a></small>
+      <div class="footer-content">
+        <small>Made with <i class="fas fa-fire heart-beat" style="color: #ff6b6b;"></i> by Leo</small>
+        <div class="social-links">
+          <a href="https://github.com/leonardosor" class="social-link" title="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -37,13 +60,16 @@
         const grid = document.getElementById('project-grid');
         grid.innerHTML = projects.map(p => `
           <article class="card">
+            <div class="card-glow"></div>
             <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
             <h3 class="card-title"><a href="${escapeHtml(p.url || p.repo || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(p.title)}</a></h3>
             <p class="card-desc">${escapeHtml(p.description || '')}</p>
-            <p class="card-meta">
-              ${p.repo ? `<a href="${escapeHtml(p.repo)}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repo</a>` : ''}
-              ${p.tags ? '<span class="tags">' + p.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('') + '</span>' : ''}
-            </p>
+            <div class="card-footer">
+              <p class="card-meta">
+                ${p.repo ? `<a href="${escapeHtml(p.repo)}" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="fab fa-github"></i> Repo</a>` : ''}
+              </p>
+              ${p.tags ? '<div class="tags">' + p.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('') + '</div>' : ''}
+            </div>
           </article>
         `).join('');
       } catch (err) {
