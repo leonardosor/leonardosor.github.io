@@ -12,5 +12,12 @@
     "repo": "https://github.com/leonardosor/siads-699",
     "url": "https://siads-699-smvw275fogweysx8gj6dri.streamlit.app/",
     "tags": ["machine-learning", "computer-vision"]
+  },
+  {
+    "title": "Galaga Inspired Game",
+    "description": "Vibe coded a Galaga inspired arcade game deployed on web.",
+    "repo": "https://github.com/leonardosor/galaga_copilot",
+    "url": "https://leonardosor.github.io/galaga_copilot/",
+    "tags": ["copilot", "vibe-coding"]
   }
 ]
