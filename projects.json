@@ -1,10 +1,10 @@
 [
   {
     "title": "Demographics and performance on standardized testing - Dimensional analysis ",
-    "description": "Analysis and visualization of high school testing and SAT score demographics.",
+    "description": "Analysis and visualization of high school testing and SAT score demographics. [WIP: Changing the stack — expect updates soon!]",
     "repo": "https://github.com/leonardosor/milestone2",
     "url": "https://milestone2-production-600b.up.railway.app/",
-    "tags": ["data-analysis", "visualization"]
+    "tags": ["data-analysis", "visualization", "WIP"]
   },
   {
     "title": "YOLO on financial forms - Fine-tuning CNNs for images in the financial domain",
