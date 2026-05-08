@@ -16,7 +16,7 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%; overflow-x: hidden;}
 body{
   margin:0;
   font-family:'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -35,6 +35,15 @@ body{
   padding-bottom:60px;
   position: relative;
   overflow-x: hidden;
+}
+
+.container{
+  max-width:var(--container);
+  width: 100%;
+  margin:0 auto;
+  padding:32px;
+  position: relative;
+  z-index: 1;
 }
 
 .animated-bg {
@@ -123,14 +132,6 @@ body{
 @keyframes gradientShift {
   0%, 100% { background-position: 0% 0%; }
   50% { background-position: 100% 100%; }
-}
-
-.container{
-  max-width:var(--container);
-  margin:0 auto;
-  padding:32px;
-  position: relative;
-  z-index: 1;
 }
 
 .site-header{
@@ -255,6 +256,7 @@ body{
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  min-width: 0;
 }
 
 .card::before {
