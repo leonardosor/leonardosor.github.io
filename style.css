@@ -155,7 +155,7 @@ body{
 }
 
 .gradient-text{
-  background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 50%, var(--gradient-3) 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #94a3b8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -164,7 +164,7 @@ body{
 }
 
 .gradient-text i {
-  background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
