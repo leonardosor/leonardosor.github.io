@@ -25,5 +25,14 @@
     "tags": ["copilot", "vibe-coding"],
     "icon": "fa-gamepad",
     "theme": "gold"
+  },
+  {
+    "title": "Home-buddy",
+    "description": "Home-buddy — a privacy-first local dashboard to monitor and control smart home devices.",
+    "repo": "https://github.com/leonardosor/home-buddy",
+    "url": "https://github.com/leonardosor/home-buddy",
+    "tags": ["home-automation", "iot", "dashboard"],
+    "icon": "fa-home",
+    "theme": "pink"
   }
 ]
