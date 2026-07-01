@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "remotive": true,
+    "remoteok": true,
+    "arbeitnow": true,
+    "weworkremotely": true
+  },
+  "min_salary_usd": 175000,
+  "recency_hours": 48,
+  "seniority_ladder": [
+    {
+      "level": "junior",
+      "keywords": ["junior", "jr", "associate", "entry level", "i "]
+    },
+    {
+      "level": "mid",
+      "keywords": ["ii", "software engineer", "mid level", "mid-level"]
+    },
+    {
+      "level": "senior",
+      "keywords": ["senior", "sr.", "sr ", "iii"]
+    },
+    {
+      "level": "staff",
+      "keywords": ["staff", "lead", "iv"]
+    },
+    {
+      "level": "principal",
+      "keywords": ["principal", "distinguished", "director", "head of"]
+    }
+  ],
+  "company_blocklist": [],
+  "keyword_blocklist": []
+}

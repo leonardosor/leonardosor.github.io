@@ -1,0 +1,27 @@
+# Resume / skills profile used by scripts/job-search.mjs to score job
+# postings as "stretch" matches (one seniority rung above your current
+# level) and to filter by relevant skills.
+#
+# Replace every REPLACE_ME value below with your real information before
+# relying on the daily digest. The script will refuse full scoring (and
+# print a loud warning) while any REPLACE_ME sentinel remains.
+
+current_title: "REPLACE_ME"          # e.g. "Senior Software Engineer"
+years_experience: 0                  # REPLACE_ME - total professional years
+seniority_level: "REPLACE_ME"        # one of: junior, mid, senior, staff, principal
+target_stretch_level: "REPLACE_ME"   # one rung above seniority_level, e.g. "staff"
+
+domains:                             # REPLACE_ME - industries/domains you've worked in
+  - "REPLACE_ME"
+
+skills:                              # REPLACE_ME - ranked list, most confident/relevant first
+  - "REPLACE_ME"
+
+past_job_titles:
+  - "REPLACE_ME"
+
+location: "REPLACE_ME"               # city/country, for timezone context
+timezone: "REPLACE_ME"               # e.g. "America/New_York"
+
+remote_only: true
+min_total_comp_usd: 175000

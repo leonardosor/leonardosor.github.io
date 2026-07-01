@@ -1,0 +1,50 @@
+name: Job Search Agent
+
+on:
+  schedule:
+    # 13:07 UTC daily (~9am US Eastern). Off-round minute to avoid the
+    # top-of-hour scheduling spike shared by every ":00" cron in the world.
+    - cron: "7 13 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (print digest, skip commit-back)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run job search
+        id: run
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          JOB_SEARCH_EMAIL_TO: ${{ secrets.JOB_SEARCH_EMAIL_TO }}
+          JOB_SEARCH_EMAIL_FROM: ${{ secrets.JOB_SEARCH_EMAIL_FROM }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            node scripts/job-search.mjs --dry-run
+          else
+            node scripts/job-search.mjs
+          fi
+
+      - name: Commit digest
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "job-search-agent[bot]"
+          git config user.email "job-search-agent@users.noreply.github.com"
+          git add digest/
+          git diff --cached --quiet && echo "No digest changes to commit" || git commit -m "Add job search digest for $(date -u +%Y-%m-%d)"
+          git push
