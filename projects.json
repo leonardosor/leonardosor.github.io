@@ -28,7 +28,7 @@
   },
   {
     "title": "Home-buddy",
-    "description": "Home-buddy — a web app to help home buyers get more details on properties they're interested in buying",
+    "description": "Home-buddy — a web app to help home buyers get more comp details, customize the weights of home features and calculate a score to help with decision-making.",
     "repo": "https://github.com/leonardosor/home-buddy",
     "url": "https://homerank.vercel.app/",
     "tags": ["Home-buying", "real state"],
