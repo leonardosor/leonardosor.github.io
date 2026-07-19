@@ -9,13 +9,13 @@
     "theme": "cyan"
   },
   {
-    "title": "YOLO on financial forms - Fine-tuning CNNs for images in the financial domain",
-    "description": "Fine-tuning Convolutional Neural Networks (YOLO) for extraction and processing of images from financial forms.",
+    "title": "Convolutional Networks for financial form processing - You Only Look Once (YOLO)",
+    "description": "Fine-tuning Convolutional Neural Networks (YOLO) for extraction and processing of scanned images of financial forms.",
     "repo": "https://github.com/leonardosor/siads-699",
     "url": "https://siads-699-smvw275fogweysx8gj6dri.streamlit.app/",
     "tags": ["machine-learning", "computer-vision"],
     "icon": "fa-robot",
-    "theme": "pink"
+    "theme": "green"
   },
   {
     "title": "Galaga Inspired Game",
