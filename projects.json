@@ -10,7 +10,7 @@
   },
   {
     "title": "YOLO on financial forms - Fine-tuning CNNs for images in the financial domain",
-    "description": "Fine-tuning object detection Convolutional Neural Networks (YOLO) for extraction and processing of images of financial forms.",
+    "description": "Fine-tuning Convolutional Neural Networks (YOLO) for extraction and processing of images from financial forms.",
     "repo": "https://github.com/leonardosor/siads-699",
     "url": "https://siads-699-smvw275fogweysx8gj6dri.streamlit.app/",
     "tags": ["machine-learning", "computer-vision"],
@@ -19,7 +19,7 @@
   },
   {
     "title": "Galaga Inspired Game",
-    "description": "Vibe coded a Galaga inspired arcade game deployed on web.",
+    "description": "Vibe coded a Galaga inspired arcade game and deployed it on web.",
     "repo": "https://github.com/leonardosor/galaga_copilot",
     "url": "https://leonardosor.github.io/galaga_copilot/",
     "tags": ["copilot", "vibe-coding"],
@@ -28,7 +28,7 @@
   },
   {
     "title": "Home-buddy",
-    "description": "Home-buddy — a web app to help home buyers get more comp details, customize the weights of home features and calculate a score to help with decision-making.",
+    "description": "Web app to help home buyers research properties they're intested in as well as to adjust the weights of home features, with the goal of providing various levers and perspectives to help find the perfect home and support your budgeting goals",
     "repo": "https://github.com/leonardosor/home-buddy",
     "url": "https://homerank.vercel.app/",
     "tags": ["Home-buying", "real state"],
