@@ -6,7 +6,7 @@
     "url": "https://schoolrank.vercel.app/",
     "tags": ["data-analysis", "visualization", "correlation"],
     "icon": "fa-chart-bar",
-    "theme": "cyan"
+    "theme": "orange"
   },
   {
     "title": "Convolutional Networks for financial form processing - You Only Look Once (YOLO)",
