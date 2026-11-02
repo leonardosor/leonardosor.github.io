@@ -29,7 +29,7 @@
   {
     "title": "Home-buddy",
     "description": "Web app to help home buyers research properties they're intested in as well as to adjust the weights of home features, with the goal of providing various levers and perspectives to help find the perfect home and support your budgeting goals",
-    "repo": "https://github.com/leonardosor/home-buddy",
+    "repo": "https://github.com/leonardosor/home_buddy",
     "url": "https://homerank.vercel.app/",
     "tags": ["Home-buying", "real state"],
     "icon": "fa-home",
