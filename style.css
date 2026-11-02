@@ -328,14 +328,23 @@ body{
   flex-shrink: 0;
 }
 
-.card-thumb--cyan {
-  background: linear-gradient(135deg, #003d5c 0%, #006b8f 50%, #00a8cc 100%);
+.card-thumb--orange {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fed7aa 100%);
 }
-.card-thumb--pink {
-  background: linear-gradient(135deg, #5c0038 0%, #8f006b 50%, #cc0099 100%);
+.card-thumb--green {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #d1fae5 100%);
 }
-.card-thumb--gold {
-  background: linear-gradient(135deg, #3d2800 0%, #7a5200 50%, #c48400 100%);
+.card-thumb--blue {
+  background: linear-gradient(135deg, #2563eb 0%, #60a5fa 50%, #dbeafe 100%);
+}
+.card-thumb--teal {
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 50%, #ccfbf1 100%);
+}
+.card-thumb--violet {
+  background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 50%, #ede9fe 100%);
+}
+.card-thumb--rose {
+  background: linear-gradient(135deg, #ec4899 0%, #f472b6 50%, #fce7f3 100%);
 }
 
 .card-thumb-icon {
