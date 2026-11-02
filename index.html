@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="S1jkaehZ3ZVCvTec4Cck0";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}});const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="S1jkaehZ3ZVCvTfc4Cck0";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}}})();
   </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -61,18 +61,31 @@
         if (!res.ok) throw new Error('projects.json not found');
         const projects = await res.json();
         const VALID_ICON = /^fa-[a-z0-9-]+$/;
-        const VALID_THEME = ['cyan', 'pink', 'gold'];
+        const VALID_THEME = ['cyan', 'pink', 'gold', 'orange', 'green', 'blue', 'teal', 'violet', 'rose'];
+        const themeColors = {
+          cyan: '#00a8cc',
+          pink: '#cc0099',
+          gold: '#c48400',
+          orange: '#f97316',
+          green: '#10b981',
+          blue: '#3b82f6',
+          teal: '#14b8a6',
+          violet: '#a78bfa',
+          rose: '#f472b6'
+        };
+        const VALID_COLOR = /^#[0-9a-fA-F]{6}$/;
         const grid = document.getElementById('project-grid');
         grid.innerHTML = projects.map(p => {
           const icon = VALID_ICON.test(p.icon || '') ? p.icon : 'fa-project-diagram';
           const theme = VALID_THEME.includes(p.theme) ? p.theme : 'cyan';
+          const color = VALID_COLOR.test(p.color || '') ? p.color : themeColors[theme];
           const imgHtml = p.image
             ? `<img src="${escapeHtml(p.image)}" alt="" class="card-thumb-img">`
             : '';
           return `
           <article class="card">
             <div class="card-glow"></div>
-            <div class="card-thumbnail card-thumb--${theme}">
+            <div class="card-thumbnail card-thumb--${theme}" style="background: linear-gradient(135deg, ${color} 0%, rgba(12, 18, 30, 0.94) 100%);">
               ${imgHtml}
               <div class="card-thumb-icon"><i class="fas ${icon}"></i></div>
             </div>
