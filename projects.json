@@ -16,6 +16,7 @@
     "url": "https://siads-699-smvw275fogweysx8gj6dri.streamlit.app/",
     "tags": ["machine-learning", "computer-vision"],
     "icon": "fa-robot",
+    "color": "#10b981",
     "theme": "green"
   },
   {
@@ -25,8 +26,9 @@
     "url": "https://schoolrank.vercel.app/",
     "tags": ["data-analysis", "visualization", "correlation"],
     "icon": "fa-chart-bar",
+    "color": "#f97316",
     "theme": "orange"
-  },  
+  },
   {
     "title": "Galaga Inspired Game",
     "description": "Vibe coded a Galaga inspired arcade game and deployed it on web.",
@@ -34,6 +36,7 @@
     "url": "https://leonardosor.github.io/galaga_copilot/",
     "tags": ["copilot", "vibe-coding"],
     "icon": "fa-gamepad",
+    "color": "#fbbf24",
     "theme": "gold"
   },
   {
@@ -43,6 +46,7 @@
     "url": "https://homerank.vercel.app/",
     "tags": ["Home-buying", "real state"],
     "icon": "fa-home",
+    "color": "#ec4899",
     "theme": "pink"
   }
 ]
