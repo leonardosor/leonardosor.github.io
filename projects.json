@@ -6,8 +6,8 @@
     "url": "https://gtmlab-ten.vercel.app/",
     "tags": ["GTM engine", "Commercial Strategy"],
     "icon": "fa-rocket",
-    "color": "#2563eb",
-    "theme": "orange"
+    "color": "#3B82F6",
+    "theme": "blue"
   },
   {
     "title": "Convolutional Networks for financial form processing - You Only Look Once (YOLO)",
@@ -26,8 +26,8 @@
     "url": "https://schoolrank.vercel.app/",
     "tags": ["data-analysis", "visualization", "correlation"],
     "icon": "fa-chart-bar",
-    "color": "#f97316",
-    "theme": "orange"
+    "color": "#14B8A6",
+    "theme": "teal"
   },
   {
     "title": "Galaga Inspired Game",
@@ -36,8 +36,8 @@
     "url": "https://leonardosor.github.io/galaga_copilot/",
     "tags": ["copilot", "vibe-coding"],
     "icon": "fa-gamepad",
-    "color": "#fbbf24",
-    "theme": "gold"
+    "color": "#F97316",
+    "theme": "orange"
   },
   {
     "title": "Home-buddy",
@@ -46,7 +46,7 @@
     "url": "https://homerank.vercel.app/",
     "tags": ["Home-buying", "real state"],
     "icon": "fa-home",
-    "color": "#ec4899",
-    "theme": "pink"
+    "color": "#F472B6",
+    "theme": "rose"
   }
 ]
