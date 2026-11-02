@@ -1,11 +1,11 @@
 [
   {
-    "title": "Income and performance on standardized testing - Dimensional analysis ",
-    "description": "Analysis and visualization of 8th grade Math proficiency compared to rate of high earning families  by school",
-    "repo": "https://github.com/leonardosor/milestone2",
-    "url": "https://schoolrank.vercel.app/",
-    "tags": ["data-analysis", "visualization", "correlation"],
-    "icon": "fa-chart-bar",
+    "title": "GTM Lab - Test, validate, and define the motions for a ficticious building material manufacturer ",
+    "description": "Segment, validate and identify GTM channels. Build a quoting and prospecting tool using publicly available data for NYC buildings",
+    "repo": "https://github.com/leonardosor/GTM_lab",
+    "url": "https://gtmlab-ten.vercel.app/",
+    "tags": ["GTM engine", "Commercial Strategy"],
+    "icon": "fa-rocket",
     "theme": "orange"
   },
   {
@@ -17,6 +17,15 @@
     "icon": "fa-robot",
     "theme": "green"
   },
+  {
+    "title": "Income and performance on standardized testing - Dimensional analysis ",
+    "description": "Analysis and visualization of 8th grade Math proficiency compared to rate of high earning families  by school",
+    "repo": "https://github.com/leonardosor/milestone2",
+    "url": "https://schoolrank.vercel.app/",
+    "tags": ["data-analysis", "visualization", "correlation"],
+    "icon": "fa-chart-bar",
+    "theme": "orange"
+  },  
   {
     "title": "Galaga Inspired Game",
     "description": "Vibe coded a Galaga inspired arcade game and deployed it on web.",
