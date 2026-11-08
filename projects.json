@@ -1,5 +1,16 @@
 [
   {
+    "title": "PanelPrep - AI mock panel interviews built from a job posting and resume",
+    "description": "A panel of AI interviewers asks questions out loud, follows up on the candidate's answers, then scores each competency with quotes from the transcript and votes hire or no hire. Built with Next.js, Convex, Claude and Stripe, deployed on Vercel.",
+    "repo": "https://github.com/leonardosor/panelprep",
+    "url": "https://panelprep.com",
+    "tags": ["AI product", "Voice AI", "SaaS"],
+    "icon": "fa-user-tie",
+    "color": "#F59E0B",
+    "theme": "amber"
+  },
+  
+  {
     "title": "GTM Lab - Test, validate, and define the motions for a ficticious building material manufacturer ",
     "description": "Segment, validate and identify GTM channels. Build a quoting and prospecting tool using publicly available data for NYC buildings",
     "repo": "https://github.com/leonardosor/GTM_lab",
