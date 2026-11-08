@@ -4,6 +4,7 @@
     "description": "A panel of AI interviewers asks questions out loud, follows up on the candidate's answers, then scores each competency with quotes from the transcript and votes hire or no hire. Built with Next.js, Convex, Claude and Stripe, deployed on Vercel.",
     "repo": "https://github.com/leonardosor/panelprep",
     "url": "https://panelprep.com",
+    "youtube": "https://www.youtube.com/@Panelprepai/playlists",
     "tags": ["AI product", "Voice AI", "SaaS"],
     "icon": "fa-user-tie",
     "color": "#F59E0B",
